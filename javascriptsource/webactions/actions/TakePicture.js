@@ -5,19 +5,18 @@
 // - the code between BEGIN USER CODE and END USER CODE
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
-import { Big } from "big.js";
-
-// BEGIN EXTRA CODE
 // END EXTRA CODE
-
 /**
  * Take a picture using the device's camera.
  * @param {MxObject} picture - This is required.
  * @param {boolean} showConfirmationScreen
+ * @param {"WebActions.PictureQuality.original"|"WebActions.PictureQuality.low"|"WebActions.PictureQuality.medium"|"WebActions.PictureQuality.high"|"WebActions.PictureQuality.custom"} pictureQuality - The default picture quality is 'Medium'.
+ * @param {Big} maximumWidth - The picture will be scaled to this maximum pixel width, while maintaining the aspect ratio.
+ * @param {Big} maximumHeight - The picture will be scaled to this maximum pixel height, while maintaining the aspect ratio.
  * @returns {Promise.<boolean>}
  */
-export async function TakePicture(picture, showConfirmationScreen) {
-	// BEGIN USER CODE
+async function TakePicture(picture, showConfirmationScreen, pictureQuality, maximumHeight, maximumWidth) {
+    // BEGIN USER CODE
     const CAMERA_POSITION = {
         BACK_CAMERA: "environment",
         FRONT_CAMERA: "user"
@@ -31,6 +30,9 @@ export async function TakePicture(picture, showConfirmationScreen) {
     }
     if (!("mediaDevices" in navigator) || !("getUserMedia" in navigator.mediaDevices)) {
         return Promise.reject(new Error("Media devices are not supported."));
+    }
+    if (pictureQuality === "custom" && !maximumHeight && !maximumWidth) {
+        return Promise.reject(new Error("Picture quality is set to 'Custom', but no maximum width or height was provided"));
     }
     // TODO: WC-463 rollup has a bug where comments are removed from the top of files, disallowing imports between "extra code" comments. Until this is fixed, SVGs are manually encoded and added here.
     const closeSVG = "PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xOC4yMjIyIDE2LjAwMDNMMjYuNTM5NyA3LjY4MjhDMjcuMTU0MSA3LjA2ODM4IDI3LjE1NDEgNi4wNzUyNCAyNi41Mzk3IDUuNDYwODJDMjUuOTI1MyA0Ljg0NjM5IDI0LjkzMjEgNC44NDYzOSAyNC4zMTc3IDUuNDYwODJMMTYuMDAwMiAxMy43NzgzTDcuNjgyNzkgNS40NjA4MkM3LjA2ODM3IDQuODQ2MzkgNi4wNzUyNCA0Ljg0NjM5IDUuNDYwODIgNS40NjA4MkM0Ljg0NjM5IDYuMDc1MjQgNC44NDYzOSA3LjA2ODM4IDUuNDYwODIgNy42ODI4TDEzLjc3ODMgMTYuMDAwM0w1LjQ2MDgyIDI0LjMxNzhDNC44NDYzOSAyNC45MzIzIDQuODQ2MzkgMjUuOTI1NCA1LjQ2MDgyIDI2LjUzOThDNS43NjcyNCAyNi44NDYzIDYuMTY5NTIgMjcuMDAwMyA2LjU3MTggMjcuMDAwM0M2Ljk3NDA4IDI3LjAwMDMgNy4zNzYzNiAyNi44NDYzIDcuNjgyNzkgMjYuNTM5OEwxNi4wMDAyIDE4LjIyMjNMMjQuMzE3NyAyNi41Mzk4QzI0LjYyNDEgMjYuODQ2MyAyNS4wMjY0IDI3LjAwMDMgMjUuNDI4NyAyNy4wMDAzQzI1LjgzMSAyNy4wMDAzIDI2LjIzMzMgMjYuODQ2MyAyNi41Mzk3IDI2LjUzOThDMjcuMTU0MSAyNS45MjU0IDI3LjE1NDEgMjQuOTMyMyAyNi41Mzk3IDI0LjMxNzhMMTguMjIyMiAxNi4wMDAzWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==";
@@ -48,7 +50,7 @@ export async function TakePicture(picture, showConfirmationScreen) {
             styleElements.push(styleElement);
             document.head.appendChild(styleElement);
         }
-        const { video, wrapper, actionControl, switchControl, closeControl, createAction, controlsWrapper, createActionAndSwitch } = createFirstScreenElements();
+        const { video, wrapper, actionControl, switchControl, closeControl, createAction, controlsWrapper, createActionAndSwitch, addAllControlButtons, removeAllControlButtons } = createFirstScreenElements();
         document.body.appendChild(wrapper);
         await startCamera(CAMERA_POSITION.BACK_CAMERA);
         const { handler: takePictureHandler, cleanup: secondScreenCleanup } = prepareSecondScreen();
@@ -66,15 +68,26 @@ export async function TakePicture(picture, showConfirmationScreen) {
             resolve(false);
         });
         switchControl.addEventListener("click", switchControlHandler);
-        actionControl.addEventListener("click", showConfirmationScreen
-            ? takePictureHandler
-            : () => {
+        actionControl.addEventListener("click", () => {
+            removeAllControlButtons();
+            if (showConfirmationScreen) {
+                // Delay the `takePictureHandler` to the next cycle so the UI preparations can go first. Otherwise, the control-buttons are not removed while the second screen is being set up.
+                setTimeout(() => {
+                    takePictureHandler(() => {
+                        addAllControlButtons();
+                        video.play();
+                    });
+                }, 0);
+            }
+            else {
+                video.pause();
                 const videoCanvas = getVideoCanvas();
                 savePicture(videoCanvas, () => {
                     videoCanvas.remove();
                     closeControlHandler();
                 });
-            });
+            }
+        });
         video.addEventListener("loadedmetadata", () => (videoIsReady = true));
         function getVideoCanvas() {
             const videoCanvas = document.createElement("canvas");
@@ -327,8 +340,15 @@ export async function TakePicture(picture, showConfirmationScreen) {
                 controlsWrapper.appendChild(switchControlWrapper);
             }
             closeControlWrapper.appendChild(closeControl);
-            wrapper.appendChild(controlsWrapper);
-            wrapper.appendChild(closeControlWrapper);
+            function addAllControlButtons() {
+                wrapper.appendChild(controlsWrapper);
+                wrapper.appendChild(closeControlWrapper);
+            }
+            function removeAllControlButtons() {
+                wrapper.removeChild(controlsWrapper);
+                wrapper.removeChild(closeControlWrapper);
+            }
+            addAllControlButtons();
             wrapper.appendChild(video);
             return {
                 video,
@@ -338,16 +358,19 @@ export async function TakePicture(picture, showConfirmationScreen) {
                 switchControl,
                 closeControl,
                 createActionAndSwitch,
-                createAction: () => controlsWrapper.appendChild(actionControl)
+                createAction: () => controlsWrapper.appendChild(actionControl),
+                addAllControlButtons,
+                removeAllControlButtons
             };
         }
         function prepareSecondScreen() {
             let confirmationWrapper;
             return {
-                handler: () => {
+                handler: onResumeFirstScreen => {
                     if (videoIsReady) {
                         confirmationWrapper = document.createElement("div");
                         confirmationWrapper.classList.add("take-picture-confirm-wrapper");
+                        video.pause();
                         // Element to retrieve the blob from mediaStream (not rendered on the screen)
                         const videoCanvas = getVideoCanvas();
                         const pictureImg = document.createElement("img");
@@ -373,10 +396,16 @@ export async function TakePicture(picture, showConfirmationScreen) {
                         confirmationWrapper.appendChild(pictureImg);
                         document.body.appendChild(confirmationWrapper);
                         saveBtn.addEventListener("click", () => {
-                            cleanupConfirmationElements();
-                            savePicture(videoCanvas, closeControlHandler);
+                            confirmationWrapper.removeChild(buttonWrapper);
+                            savePicture(videoCanvas, () => {
+                                closeControlHandler();
+                                cleanupConfirmationElements();
+                            });
                         });
-                        closeBtn.addEventListener("click", () => cleanupConfirmationElements());
+                        closeBtn.addEventListener("click", () => {
+                            cleanupConfirmationElements();
+                            onResumeFirstScreen();
+                        });
                         // eslint-disable-next-line no-inner-declarations
                         function cleanupConfirmationElements() {
                             document.body.removeChild(confirmationWrapper);
@@ -417,8 +446,7 @@ export async function TakePicture(picture, showConfirmationScreen) {
                 stream = await navigator.mediaDevices.getUserMedia({
                     video: {
                         facingMode,
-                        width: { min: 1280, ideal: 1920, max: 2560 },
-                        height: { min: 720, ideal: 1080, max: 1440 }
+                        ...getCameraQuality()
                     }
                 });
                 (_a = stream === null || stream === void 0 ? void 0 : stream.getTracks()) === null || _a === void 0 ? void 0 : _a.forEach(track => {
@@ -463,7 +491,7 @@ export async function TakePicture(picture, showConfirmationScreen) {
             });
             stream = undefined;
         }
-        async function savePicture(videoCanvas, onSuccess) {
+        function savePicture(videoCanvas, onSuccess) {
             const progressId = mx.ui.showProgress();
             const filename = `device-camera-picture-${new Date().getTime()}.png`; // `toBlob` defaults to PNG.
             new Promise((resolve, reject) => {
@@ -502,6 +530,31 @@ export async function TakePicture(picture, showConfirmationScreen) {
                 reject(new Error(message));
             });
         }
+        function getCameraQuality() {
+            switch (pictureQuality) {
+                case "low":
+                    return {
+                        width: { ideal: 1024 },
+                        height: { ideal: 1024 }
+                    };
+                case "medium":
+                default:
+                    return {
+                        width: { ideal: 2048 },
+                        height: { ideal: 2048 }
+                    };
+                case "high":
+                    return {
+                        width: { ideal: 4096 },
+                        height: { ideal: 4096 }
+                    };
+                case "custom":
+                    return {
+                        width: { ideal: Number(maximumWidth) },
+                        height: { ideal: Number(maximumHeight) }
+                    };
+            }
+        }
     });
     function prepareLanguage() {
         const englishFn = (english, _dutch) => english;
@@ -521,5 +574,7 @@ export async function TakePicture(picture, showConfirmationScreen) {
         }
         return videoDevices.length > 1;
     }
-	// END USER CODE
+    // END USER CODE
 }
+
+export { TakePicture };
