@@ -13,3 +13,6 @@
 /javasource/system/
 /**/node_modules/
 !/javascriptsource/**/node_modules/
+/starterapp_blank.mpr.bak
+/starterapp_blank.mpr.lock
+/nativemobile/builds/
