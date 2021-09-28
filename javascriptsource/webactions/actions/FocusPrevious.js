@@ -16,14 +16,6 @@ import { Big } from "big.js";
  */
 export async function FocusPrevious() {
 	// BEGIN USER CODE
-    const { findNext, getFocus, setFocus } = require("./FocusHelper");
-    function focusPrevious() {
-        const previous = findNext(getFocus(), true);
-        if (previous) {
-            setFocus(previous);
-        }
-    }
-    focusPrevious();
-    return Promise.resolve();
+	throw new Error("JavaScript action was not implemented");
 	// END USER CODE
 }

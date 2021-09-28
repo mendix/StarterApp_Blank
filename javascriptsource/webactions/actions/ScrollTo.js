@@ -17,16 +17,6 @@ import { Big } from "big.js";
  */
 export async function ScrollTo(targetSelector) {
 	// BEGIN USER CODE
-    const element = document.querySelector(targetSelector);
-    if (element) {
-        element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-            inline: "nearest"
-        });
-    }
-    else {
-        console.log("no item found");
-    }
+	throw new Error("JavaScript action was not implemented");
 	// END USER CODE
 }

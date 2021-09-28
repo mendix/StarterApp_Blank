@@ -17,21 +17,6 @@ import { Big } from "big.js";
  */
 export async function SetFocus(targetSelector) {
 	// BEGIN USER CODE
-    const { isFocusable, focusFirst, setFocus } = require("./FocusHelper");
-    const targetNode = targetSelector
-        ? document.querySelector(targetSelector)
-        : null;
-    if (targetNode) {
-        if (isFocusable(targetNode)) {
-            setFocus(targetNode);
-        }
-        else {
-            // If the target is not focusable, select the first focusable within
-            focusFirst(targetNode);
-        }
-    }
-    else {
-        console.warn(`No DOM node found to set focus for query selector ${targetSelector}`);
-    }
+	throw new Error("JavaScript action was not implemented");
 	// END USER CODE
 }

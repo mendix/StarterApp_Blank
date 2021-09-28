@@ -16,8 +16,6 @@ import { Big } from "big.js";
  */
 export async function FocusNext() {
 	// BEGIN USER CODE
-    const { focusNext } = require("./FocusHelper");
-    focusNext();
-    return Promise.resolve();
+	throw new Error("JavaScript action was not implemented");
 	// END USER CODE
 }
