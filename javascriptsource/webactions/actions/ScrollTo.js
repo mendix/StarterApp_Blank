@@ -5,18 +5,25 @@
 // - the code between BEGIN USER CODE and END USER CODE
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
-import { Big } from "big.js";
-
-// BEGIN EXTRA CODE
-// END EXTRA CODE
-
 /**
  * Scroll the window to make targeted element visible
- * @param {string} targetSelector - Selector to reach the element to be scrolled to, example .mx-class or #widget-id
+ * @param {string} targetSelector
  * @returns {Promise.<void>}
  */
-export async function ScrollTo(targetSelector) {
-	// BEGIN USER CODE
-	throw new Error("JavaScript action was not implemented");
-	// END USER CODE
+async function ScrollTo(targetSelector) {
+    // BEGIN USER CODE
+    const element = document.querySelector(targetSelector);
+    if (element) {
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest"
+        });
+    }
+    else {
+        console.log("no item found");
+    }
+    // END USER CODE
 }
+
+export { ScrollTo };
