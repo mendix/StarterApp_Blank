@@ -16,10 +16,6 @@ import { Big } from "big.js";
 export async function ToggleSidebar() {
 	// BEGIN USER CODE
     mx.ui.toggleSidebar();
-    // Web platform
-    if (window) {
-        document.dispatchEvent(new CustomEvent("toggleSidebar"));
-    }
     return Promise.resolve();
 	// END USER CODE
 }
