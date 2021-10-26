@@ -1,0 +1,1 @@
+{"BranchName":"lts/9.6.x","ModelerVersion":"9.6.0.27784","ModelChanges":[{"Status":"Modified","UnitID":"61644d96-c7a7-415b-bf13-1d2c2c764115","UnitType":"Forms$PageTemplate","UnitName":"Detail_Map","Module":"Atlas_Web_Content"}],"RelatedStories":[],"isWebModelerCommit":false,"HasModelerVersion":true}
