@@ -19837,30 +19837,6 @@ h6,
   justify-content: center  !important;
 }
 
-.shadow-small {
-  box-shadow: 0 2px 4px 0 rgba(206, 208, 211, 0.66);
-  margin-bottom: 5px;
-  border-width: 1px  !important;
-  border-style: solid;
-  border-color: rgba(206, 208, 211, 0.5);
-}
-
-.shadow-medium {
-  box-shadow: 0 5px 7px 0 rgba(206, 208, 211, 0.66);
-  margin-bottom: 15px;
-  border-width: 1px  !important;
-  border-style: solid;
-  border-color: rgba(206, 208, 211, 0.5);
-}
-
-.shadow-large {
-  box-shadow: 0 8px 10px 0 rgba(206, 208, 211, 0.66);
-  margin-bottom: 25px;
-  border-width: 1px  !important;
-  border-style: solid;
-  border-color: rgba(206, 208, 211, 0.5);
-}
-
 @media (max-width: 767px) {
   .hide-phone {
     display: none  !important;
@@ -21987,7 +21963,6 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin-left: 8px;
   flex-grow: 0;
   color: #606671;
-  height: 14px;
 }
 .table .th .column-header:focus:not(:focus-visible) {
   outline: none;
@@ -22025,16 +22000,13 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   padding: 8px;
   margin: 0 8px;
 }
-.table .column-selector .column-selector-content .column-selector-button svg {
-  width: 14px;
-}
 .table .column-selector .column-selector-content .column-selectors {
   position: absolute;
   right: 0;
   margin: 8px;
   padding: 0 16px;
   background: #fff;
-  z-index: 102;
+  z-index: 99;
   border-radius: 3px;
   border: 1px solid transparent;
   list-style-type: none;
@@ -22149,7 +22121,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin: 8px 0;
   padding: 0 16px;
   background: #fff;
-  z-index: 102;
+  z-index: 99;
   border-radius: 3px;
   border: 1px solid transparent;
   list-style-type: none;
@@ -22249,7 +22221,6 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin-left: 8px;
   flex-grow: 0;
   color: #606671;
-  height: 14px;
 }
 .table .th .column-header:focus:not(:focus-visible) {
   outline: none;
@@ -22287,16 +22258,13 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   padding: 8px;
   margin: 0 8px;
 }
-.table .column-selector .column-selector-content .column-selector-button svg {
-  width: 14px;
-}
 .table .column-selector .column-selector-content .column-selectors {
   position: absolute;
   right: 0;
   margin: 8px;
   padding: 0 16px;
   background: #fff;
-  z-index: 102;
+  z-index: 99;
   border-radius: 3px;
   border: 1px solid transparent;
   list-style-type: none;
@@ -22411,7 +22379,7 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin: 8px 0;
   padding: 0 16px;
   background: #fff;
-  z-index: 102;
+  z-index: 99;
   border-radius: 3px;
   border: 1px solid transparent;
   list-style-type: none;
@@ -22592,7 +22560,7 @@ Space between the fields and the popup
   margin: 0 8px;
   padding: 0;
   background: #fff;
-  z-index: 102;
+  z-index: 99;
   border-radius: 8px;
   list-style-type: none;
   box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
@@ -22623,7 +22591,6 @@ Space between the fields and the popup
   list-style-type: none;
   box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
   overflow: hidden;
-  z-index: 102;
 }
 .filter-selectors li {
   display: flex;
@@ -22651,7 +22618,6 @@ Space between the fields and the popup
   box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
   overflow-x: hidden;
   max-height: 40vh;
-  z-index: 102;
 }
 .dropdown-list li {
   display: flex;
@@ -22704,7 +22670,7 @@ Space between the fields and the popup
   margin: 0 8px;
   padding: 0;
   background: #fff;
-  z-index: 102;
+  z-index: 99;
   border-radius: 8px;
   list-style-type: none;
   box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
@@ -22738,10 +22704,6 @@ Space between the fields and the popup
   margin: 8px;
   font-weight: normal;
   width: calc(100% - 32px);
-}
-
-.date-filter-container {
-  z-index: 102;
 }
 
 /**
