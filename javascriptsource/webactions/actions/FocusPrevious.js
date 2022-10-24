@@ -5,17 +5,12 @@
 // - the code between BEGIN USER CODE and END USER CODE
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
-import { Big } from "big.js";
-
-// BEGIN EXTRA CODE
-// END EXTRA CODE
-
 /**
  * Move the keyboard focus to the previous element that can be focused.
  * @returns {Promise.<void>}
  */
-export async function FocusPrevious() {
-	// BEGIN USER CODE
+async function FocusPrevious() {
+    // BEGIN USER CODE
     const { findNext, getFocus, setFocus } = require("./FocusHelper");
     function focusPrevious() {
         const previous = findNext(getFocus(), true);
@@ -25,5 +20,7 @@ export async function FocusPrevious() {
     }
     focusPrevious();
     return Promise.resolve();
-	// END USER CODE
+    // END USER CODE
 }
+
+export { FocusPrevious };
