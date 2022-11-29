@@ -562,6 +562,7 @@
 			<file path="widgets\com.mendix.widget.web.DropdownSort.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Fieldset.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Gallery.mpk"/>
+			<file path="widgets\com.mendix.widget.web.HTMLElement.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Image.mpk"/>
 			<file path="widgets\com.mendix.widget.web.LanguageSelector.mpk"/>
 			<file path="widgets\com.mendix.widget.web.PopupMenu.mpk"/>
