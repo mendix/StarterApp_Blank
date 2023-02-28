@@ -16691,21 +16691,21 @@ img.img-scale-down,
   background-color: #f8f8f8;
   box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
 }
-.popupmenu-menu.popupmenu-position-left {
+.popupmenu-menu.popupmenu-position-left:not(.popup-portal) {
   top: 0;
   left: 0;
   transform: translateX(-100%);
 }
-.popupmenu-menu.popupmenu-position-right {
+.popupmenu-menu.popupmenu-position-right:not(.popup-portal) {
   top: 0;
   right: 0;
   transform: translateX(100%);
 }
-.popupmenu-menu.popupmenu-position-top {
+.popupmenu-menu.popupmenu-position-top:not(.popup-portal) {
   top: 0;
   transform: translateY(-100%);
 }
-.popupmenu-menu.popupmenu-position-bottom {
+.popupmenu-menu.popupmenu-position-bottom:not(.popup-portal) {
   bottom: 0;
   transform: translateY(100%);
 }
@@ -22443,14 +22443,9 @@ Space between the fields and the popup
 }
 
 .dropdown-list {
-  padding: 0;
-  background: #fff;
-  border-radius: 8px;
   list-style-type: none;
-  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
-  overflow-x: hidden;
-  max-height: 40vh;
-  z-index: 102;
+  padding: 0;
+  margin-bottom: 0;
 }
 .dropdown-list li {
   display: flex;
@@ -22479,6 +22474,46 @@ Space between the fields and the popup
   margin: 8px;
   font-weight: normal;
   width: calc(100% - 32px);
+}
+
+:not(.dropdown-content) > .dropdown-list {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow-x: hidden;
+  max-height: 40vh;
+  z-index: 102;
+}
+
+.dropdown-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+  overflow-x: hidden;
+  max-height: 40vh;
+  z-index: 102;
+}
+.dropdown-content-section + .dropdown-content-section {
+  border-top: 1px solid #e7e7e9;
+}
+
+.dropdown-footer {
+  position: sticky;
+  bottom: 0;
+  background: inherit;
+}
+
+.dropdown-footer-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 8px;
+  min-height: 40px;
+}
+
+.dropdown-loading {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .dropdown-container {
