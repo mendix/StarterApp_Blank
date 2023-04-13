@@ -487,6 +487,7 @@
 			<file path="themesource\datawidgets\web\_gallery-design-properties.scss"/>
 			<file path="themesource\datawidgets\web\_gallery.scss"/>
 			<file path="themesource\datawidgets\web\main.scss"/>
+			<file path="themesource\datawidgets\web\_three-state-checkbox.scss"/>
 			<file path="themesource\datawidgets\web\_tree-node-design-properties.scss"/>
 			<file path="themesource\datawidgets\web\_tree-node.scss"/>
 			<file path="themesource\nanoflowcommons\native\design-properties.json"/>
@@ -567,6 +568,7 @@
 			<file path="widgets\com.mendix.widget.web.Image.mpk"/>
 			<file path="widgets\com.mendix.widget.web.LanguageSelector.mpk"/>
 			<file path="widgets\com.mendix.widget.web.PopupMenu.mpk"/>
+			<file path="widgets\com.mendix.widget.web.SelectionHelper.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Timeline.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Tooltip.mpk"/>
 			<file path="widgets\com.mendix.widget.web.TreeNode.mpk"/>
