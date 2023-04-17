@@ -22205,6 +22205,10 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   white-space: nowrap;
 }
 
+.widget-datagrid.widget-datagrid-selection-method-click .tr.tr-selected .td {
+  background-color: #e6eaff;
+}
+
 /**
     Classes for React Date-Picker font-unit and color adjustments
 */
@@ -22931,6 +22935,9 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
 .widget-gallery .widget-gallery-clickable:focus-visible {
   outline: 1px solid #264ae5;
 }
+.widget-gallery:not(.widget-gallery-disable-selected-items-highlight) .widget-gallery-item.widget-gallery-clickable.widget-gallery-selected {
+  background: #e6eaff;
+}
 .widget-gallery .infinite-loading {
   overflow: auto;
 }
@@ -23071,6 +23078,77 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
 
 .widget-gallery-pagination-center .widget-gallery-pagination .pagination-bar {
   justify-content: center;
+}
+
+input[type=checkbox].three-state-checkbox {
+  position: relative !important;
+  width: 16px;
+  height: 16px;
+  margin: 0 !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  transform: translateZ(0);
+}
+input[type=checkbox].three-state-checkbox:before, input[type=checkbox].three-state-checkbox:after {
+  position: absolute;
+  display: block;
+  transition: all 0.3s ease;
+}
+input[type=checkbox].three-state-checkbox:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 1px solid #e7e7e9;
+  border-radius: 4px;
+  background-color: transparent;
+}
+input[type=checkbox].three-state-checkbox:not(:indeterminate):after {
+  width: 8px;
+  height: 4px;
+  margin: 5px 4px;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  border: 2px solid #ffffff;
+  border-top: 0;
+  border-right: 0;
+}
+input[type=checkbox].three-state-checkbox:indeterminate:after {
+  width: 8px;
+  height: 4px;
+  margin: 5px 4px;
+  transform: rotate(0deg);
+  pointer-events: none;
+  border: 0 solid #ffffff;
+  border-bottom-width: 2px;
+  transition: border 0s;
+}
+input[type=checkbox].three-state-checkbox:not(:disabled):not(:checked):hover:after {
+  content: "";
+  border-color: #e7e7e9;
+}
+input[type=checkbox].three-state-checkbox:indeterminate:before, input[type=checkbox].three-state-checkbox:checked:before {
+  border-color: #264ae5;
+  background-color: #264ae5;
+}
+input[type=checkbox].three-state-checkbox:indeterminate:after, input[type=checkbox].three-state-checkbox:checked:after {
+  content: "";
+}
+input[type=checkbox].three-state-checkbox:disabled:before {
+  background-color: #f8f8f8;
+}
+input[type=checkbox].three-state-checkbox:checked:disabled:before {
+  border-color: transparent;
+  background-color: rgba(38, 74, 229, 0.4);
+}
+input[type=checkbox].three-state-checkbox:disabled:after, input[type=checkbox].three-state-checkbox:checked:disabled:after {
+  border-color: #f8f8f8;
+}
+input[type=checkbox].three-state-checkbox + .control-label {
+  margin-left: 8px;
 }
 
 .widget-tree-node {
