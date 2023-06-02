@@ -58,12 +58,6 @@
         }
     }
 
-    &:not(.widget-gallery-disable-selected-items-highlight) {
-        .widget-gallery-item.widget-gallery-clickable.widget-gallery-selected {
-            background: $brand-light;
-        }
-    }
-
     .infinite-loading {
         overflow: auto;
     }
