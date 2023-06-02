@@ -3,7 +3,6 @@ $background-color: #fff !default;
 $selected-color: #dadcde !default;
 $border-color: #ced0d3 !default;
 $arrow: "resources/dropdown-arrow.svg";
-$item-min-height: 32px;
 
 @import "date-picker";
 
@@ -29,10 +28,6 @@ $item-min-height: 32px;
 
     .btn-calendar {
         margin-left: 5px; //Review in atlas, the current date picker is also 5px
-        .button-icon {
-            width: 18px;
-            height: 18px;
-        }
     }
 }
 
@@ -131,15 +126,20 @@ $item-min-height: 32px;
 }
 
 .dropdown-list {
-    list-style-type: none;
     padding: 0;
-    margin-bottom: 0;
+    background: $background-color;
+    border-radius: 8px;
+    list-style-type: none;
+    box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
+    overflow-x: hidden;
+    max-height: 40vh;
+    z-index: 102;
 
     li {
         display: flex;
         align-items: center;
         font-weight: normal;
-        min-height: $item-min-height;
+        min-height: 32px;
         cursor: pointer;
         padding: 0 $spacing-small;
 
@@ -168,47 +168,6 @@ $item-min-height: 32px;
             width: calc(100% - 32px);
         }
     }
-}
-
-:not(.dropdown-content) > .dropdown-list {
-    background: $background-color;
-    border-radius: 8px;
-    box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
-    overflow-x: hidden;
-    max-height: 40vh;
-    z-index: 102;
-}
-
-.dropdown-content {
-    background: $background-color;
-    border-radius: 8px;
-    box-shadow: 0 2px 20px 1px rgba(5, 15, 129, 0.05), 0 2px 16px 0 rgba(33, 43, 54, 0.08);
-    overflow-x: hidden;
-    max-height: 40vh;
-    z-index: 102;
-
-    &-section + &-section {
-        border-top: 1px solid $form-input-border-color;
-    }
-}
-
-.dropdown-footer {
-    position: sticky;
-    bottom: 0;
-    background: inherit;
-}
-
-.dropdown-footer-item {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    padding: 0 $spacing-small;
-    min-height: 40px;
-}
-
-.dropdown-loading {
-    flex-grow: 1;
-    text-align: center;
 }
 
 .dropdown-container {
@@ -246,7 +205,7 @@ $item-min-height: 32px;
             display: flex;
             align-items: center;
             font-weight: normal;
-            min-height: $item-min-height;
+            min-height: 32px;
             cursor: pointer;
             padding: 0 $spacing-small;
 

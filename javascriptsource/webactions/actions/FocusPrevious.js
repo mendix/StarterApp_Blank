@@ -6,7 +6,6 @@
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
 import { Big } from "big.js";
-import { findNext, getFocus, setFocus } from "./FocusHelper";
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -17,6 +16,7 @@ import { findNext, getFocus, setFocus } from "./FocusHelper";
  */
 export async function FocusPrevious() {
 	// BEGIN USER CODE
+    const { findNext, getFocus, setFocus } = require("./FocusHelper");
     function focusPrevious() {
         const previous = findNext(getFocus(), true);
         if (previous) {
