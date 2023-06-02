@@ -453,6 +453,7 @@
 			<file path="themesource\feedbackmodule\web\dialog\_dialog.scss"/>
 			<file path="themesource\feedbackmodule\web\dialog\_underlay.scss"/>
 			<file path="themesource\feedbackmodule\web\_failed.scss"/>
+			<file path="themesource\feedbackmodule\web\_feedbackForm.scss"/>
 			<file path="themesource\feedbackmodule\web\includes\_atlasVariables.scss"/>
 			<file path="themesource\feedbackmodule\web\includes\_helpers.scss"/>
 			<file path="themesource\feedbackmodule\web\includes\_variables.scss"/>
@@ -474,7 +475,6 @@
 			<file path="themesource\webactions\native\main.js"/>
 			<file path="themesource\webactions\web\design-properties.json"/>
 			<file path="themesource\webactions\web\main.scss"/>
-			<file path="theme\web\atlasui-theme-files.zip"/>
 			<file path="theme\web\custom-variables.scss"/>
 			<file path="theme\web\exclusion-variables.scss"/>
 			<file path="theme\web\login.html"/>
