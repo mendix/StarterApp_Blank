@@ -486,6 +486,7 @@
 			<file path="widgets\com.mendix.widget.web.AccessibilityHelper.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Accordion.mpk"/>
 			<file path="widgets\com.mendix.widget.web.BarcodeScanner.mpk"/>
+			<file path="widgets\com.mendix.widget.web.Combobox.mpk"/>
 			<file path="widgets\com.mendix.widget.web.DatagridDateFilter.mpk"/>
 			<file path="widgets\com.mendix.widget.web.DatagridDropdownFilter.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Datagrid.mpk"/>
