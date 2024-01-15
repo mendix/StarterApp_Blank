@@ -190,6 +190,7 @@
 			<file path="theme\native\custom-variables.js"/>
 			<file path="theme\native\exclusion-variables.js"/>
 			<file path="theme\native\main.js"/>
+			<file path="theme\native\toggle-password.js"/>
 			<file path="themesource\administration\native\design-properties.json"/>
 			<file path="themesource\administration\native\main.js"/>
 			<file path="themesource\administration\web\design-properties.json"/>
@@ -390,6 +391,7 @@
 			<file path="themesource\atlas_core\web\layouts\_layout-atlas.scss"/>
 			<file path="themesource\atlas_core\web\layouts\_layout-atlas-tablet.scss"/>
 			<file path="themesource\atlas_core\web\main.scss"/>
+			<file path="themesource\atlas_core\web\_variables-css-mappings.scss"/>
 			<file path="themesource\atlas_core\web\_variables.scss"/>
 			<file path="themesource\atlas_web_content\.version"/>
 			<file path="themesource\atlas_web_content\web\buildingblocks\_alert.scss"/>
@@ -482,10 +484,10 @@
 			<file path="widgets\BadgeButton.mpk"/>
 			<file path="widgets\Badge.mpk"/>
 			<file path="widgets\Charts.mpk"/>
-			<file path="widgets\com.mendix.widget.native.Feedback.mpk"/>
 			<file path="widgets\com.mendix.widget.web.AccessibilityHelper.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Accordion.mpk"/>
 			<file path="widgets\com.mendix.widget.web.BarcodeScanner.mpk"/>
+			<file path="widgets\com.mendix.widget.web.Combobox.mpk"/>
 			<file path="widgets\com.mendix.widget.web.DatagridDateFilter.mpk"/>
 			<file path="widgets\com.mendix.widget.web.DatagridDropdownFilter.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Datagrid.mpk"/>
