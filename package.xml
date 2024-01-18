@@ -484,6 +484,7 @@
 			<file path="widgets\BadgeButton.mpk"/>
 			<file path="widgets\Badge.mpk"/>
 			<file path="widgets\Charts.mpk"/>
+			<file path="widgets\com.mendix.widget.native.Feedback.mpk"/>
 			<file path="widgets\com.mendix.widget.web.AccessibilityHelper.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Accordion.mpk"/>
 			<file path="widgets\com.mendix.widget.web.BarcodeScanner.mpk"/>
