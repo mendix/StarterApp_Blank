@@ -5,6 +5,8 @@
 		<projectFile path="StarterApp_Blank.mpr"/>
 		<files>
 			<file path="javascriptsource\datawidgets\actions\Export_To_Excel.js"/>
+			<file path="javascriptsource\datawidgets\actions\Reset_All_Filters.js"/>
+			<file path="javascriptsource\datawidgets\actions\Reset_Filter.js"/>
 			<file path="javascriptsource\datawidgets\actions\xlsx-export-tools.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64Decode.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64DecodeToImage.js"/>
@@ -473,7 +475,6 @@
 			<file path="themesource\webactions\web\main.scss"/>
 			<file path="themesource\webactions\web\_take-picture.scss"/>
 			<file path="theme\web\custom-variables.scss"/>
-			<file path="theme\web\.DS_Store"/>
 			<file path="theme\web\exclusion-variables.scss"/>
 			<file path="theme\web\js\toggle-password.js"/>
 			<file path="theme\web\login.html"/>
