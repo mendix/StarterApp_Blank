@@ -192,7 +192,6 @@
 			<file path="theme\native\custom-variables.js"/>
 			<file path="theme\native\exclusion-variables.js"/>
 			<file path="theme\native\main.js"/>
-			<file path="theme\native\toggle-password.js"/>
 			<file path="themesource\administration\native\design-properties.json"/>
 			<file path="themesource\administration\native\main.js"/>
 			<file path="themesource\administration\web\design-properties.json"/>
@@ -477,7 +476,6 @@
 			<file path="theme\web\custom-variables.scss"/>
 			<file path="theme\web\exclusion-variables.scss"/>
 			<file path="theme\web\js\toggle-password.js"/>
-			<file path="theme\web\._login.html"/>
 			<file path="theme\web\login.html"/>
 			<file path="theme\web\login-with-mendixsso-automatically.html"/>
 			<file path="theme\web\login-with-mendixsso-button.html"/>
