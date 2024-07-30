@@ -9,6 +9,13 @@
 			<file path="javascriptsource\datawidgets\actions\Reset_Filter.js"/>
 			<file path="javascriptsource\datawidgets\actions\Set_Filter.js"/>
 			<file path="javascriptsource\datawidgets\actions\xlsx-export-tools.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\GetStorageItemObject.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_PopulateFeedbackMetadata.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_RevokeUploadedFileFromMemory.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_ToggleFeedbackAnnotateWidget.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_ToggleFeedbackScreenshotWidget.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_UploadAndConvertToFileBlobURL.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\SetStorageItemObject.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64Decode.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64DecodeToImage.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64Encode.js"/>
@@ -181,6 +188,8 @@
 			<file path="javascriptsource\webactions\actions\TakePicture.js"/>
 			<file path="javascriptsource\webactions\LICENSE"/>
 			<file path="javascriptsource\webactions\.version"/>
+			<file path="javasource\feedbackmodule\actions\ValidateEmail.java"/>
+			<file path="javasource\feedbackmodule\actions\XSS_Sanitizer.java"/>
 			<file path="theme-cache\web\img\theme\datagrid-filters.eot"/>
 			<file path="theme-cache\web\img\theme\datagrid-filters.svg"/>
 			<file path="theme-cache\web\img\theme\datagrid-filters.ttf"/>
@@ -457,12 +466,14 @@
 			<file path="themesource\feedbackmodule\web\includes\_atlasVariables.scss"/>
 			<file path="themesource\feedbackmodule\web\includes\_helpers.scss"/>
 			<file path="themesource\feedbackmodule\web\includes\_variables.scss"/>
+			<file path="themesource\feedbackmodule\web\input\_input.scss"/>
 			<file path="themesource\feedbackmodule\web\_labelGroup.scss"/>
 			<file path="themesource\feedbackmodule\web\_lightbox.scss"/>
 			<file path="themesource\feedbackmodule\web\main.scss"/>
 			<file path="themesource\feedbackmodule\web\_result.scss"/>
 			<file path="themesource\feedbackmodule\web\_screenshotPreview.scss"/>
 			<file path="themesource\feedbackmodule\web\_startButton.scss"/>
+			<file path="themesource\feedbackmodule\web\_startButton.scss.bak"/>
 			<file path="themesource\feedbackmodule\web\toolbar\_toolbar.scss"/>
 			<file path="themesource\feedbackmodule\web\toolbar\_toolButton.scss"/>
 			<file path="themesource\feedbackmodule\web\_tooltip.scss"/>
