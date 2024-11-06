@@ -17,3 +17,5 @@
 /starterapp_blank.mpr.lock
 /nativemobile/builds/
 /vendorlib/temp/
+.DS_Store
+/.svn/
