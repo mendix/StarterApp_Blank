@@ -552,6 +552,13 @@
 			<file path="themesource\feedbackmodule\web\tool-button.scss"/>
 			<file path="themesource\feedbackmodule\web\underlay.scss"/>
 			<file path="themesource\feedbackmodule\web\variables.scss"/>
+			<file path="themesource\fileuploader\LICENSE"/>
+			<file path="themesource\fileuploader\native\design-properties.json"/>
+			<file path="themesource\fileuploader\native\main.js"/>
+			<file path="themesource\fileuploader\settings.json"/>
+			<file path="themesource\fileuploader\.version"/>
+			<file path="themesource\fileuploader\web\design-properties.json"/>
+			<file path="themesource\fileuploader\web\main.scss"/>
 			<file path="themesource\nanoflowcommons\native\design-properties.json"/>
 			<file path="themesource\nanoflowcommons\native\main.js"/>
 			<file path="themesource\nanoflowcommons\.version"/>
@@ -586,6 +593,7 @@
 			<file path="widgets\com.mendix.widget.web.DatagridTextFilter.mpk"/>
 			<file path="widgets\com.mendix.widget.web.DropdownSort.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Fieldset.mpk"/>
+			<file path="widgets\com.mendix.widget.web.FileUploader.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Gallery.mpk"/>
 			<file path="widgets\com.mendix.widget.web.HTMLElement.mpk"/>
 			<file path="widgets\com.mendix.widget.web.Image.mpk"/>

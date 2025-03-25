@@ -11,19 +11,15 @@ package feedbackmodule.actions;
 
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
-import com.mendix.systemwideinterfaces.core.UserAction;
 
-public class ValidateEmail extends UserAction<java.lang.Boolean>
+public class ValidateEmail extends CustomJavaAction<java.lang.Boolean>
 {
-	private final java.lang.String EmailAddress;
+	private java.lang.String EmailAddress;
 
-	public ValidateEmail(
-		IContext context,
-		java.lang.String _emailAddress
-	)
+	public ValidateEmail(IContext context, java.lang.String EmailAddress)
 	{
 		super(context);
-		this.EmailAddress = _emailAddress;
+		this.EmailAddress = EmailAddress;
 	}
 
 	@java.lang.Override
