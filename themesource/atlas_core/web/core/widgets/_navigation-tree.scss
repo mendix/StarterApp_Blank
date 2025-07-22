@@ -86,7 +86,7 @@
                     border: 0;
 
                     a {
-                        padding: var(--spacing-medium);
+                        padding: var(--navigation-item-padding);
                         text-decoration: none;
                         color: var(--navigation-sub-color);
                         border: 0;
@@ -100,10 +100,11 @@
                         }
 
                         &:hover,
-                        &:focus,
                         &.active {
                             color: var(--navigation-sub-color-hover);
-                            outline: 0;
+                        }
+                        &:focus-visible {
+                            @extend .focus-ring !optional;
                         }
 
                         &.active {
@@ -115,14 +116,13 @@
             }
 
             &:not(.mx-navigationtree-collapsed) {
-                border-radius: var(--border-radius-default);
+                border-radius: var(--navigation-border-radius);
                 background-color: var(--navigation-sub-bg);
             }
         }
 
-        /* remove focus */
-        &:focus {
-            outline: 0;
+        &:focus-visible {
+            @extend .focus-ring !optional;
         }
     }
 }
