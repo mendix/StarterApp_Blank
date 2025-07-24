@@ -9,14 +9,17 @@
 			<file path="javascriptsource\datawidgets\actions\Reset_Filter.js"/>
 			<file path="javascriptsource\datawidgets\actions\Set_Filter.js"/>
 			<file path="javascriptsource\datawidgets\actions\xlsx-export-tools.js"/>
-			<file path="javascriptsource\.DS_Store"/>
-			<file path="javascriptsource\feedbackmodule\actions\GetStorageItemObject.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_GetFeedbackStorageObject.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_GetSingleLocalStorageObjectItem.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_isStrictMode.js"/>
 			<file path="javascriptsource\feedbackmodule\actions\JS_PopulateFeedbackMetadata.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_Recalculate_MendixModal_Error_PopUp_Zindex.js"/>
 			<file path="javascriptsource\feedbackmodule\actions\JS_RevokeUploadedFileFromMemory.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_SetFeedbackStorageObject.js"/>
+			<file path="javascriptsource\feedbackmodule\actions\JS_SetSingleLocalStorageObjectItem.js"/>
 			<file path="javascriptsource\feedbackmodule\actions\JS_ToggleFeedbackAnnotateWidget.js"/>
 			<file path="javascriptsource\feedbackmodule\actions\JS_ToggleFeedbackScreenshotWidget.js"/>
 			<file path="javascriptsource\feedbackmodule\actions\JS_UploadAndConvertToFileBlobURL.js"/>
-			<file path="javascriptsource\feedbackmodule\actions\SetStorageItemObject.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64Decode.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64DecodeToImage.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Base64Encode.js"/>
@@ -26,7 +29,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\dependencies.json"/>
 			<file path="javascriptsource\nanoflowcommons\actions\dependencies.txt"/>
 			<file path="javascriptsource\nanoflowcommons\actions\DraftEmail.js"/>
-			<file path="javascriptsource\nanoflowcommons\actions\.DS_Store"/>
 			<file path="javascriptsource\nanoflowcommons\actions\FindObjectWithGUID.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\GenerateUniqueID.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\GenerateUniqueID.json"/>
@@ -51,7 +53,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\IsConnectedToServer.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\LICENSE"/>
 			<file path="javascriptsource\nanoflowcommons\actions\NavigateTo.js"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\.DS_Store"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\invariant\browser.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\invariant\CHANGELOG.md"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\invariant\invariant.js"/>
@@ -59,6 +60,7 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\invariant\LICENSE"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\invariant\package.json"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\invariant\README.md"/>
+			<file path="javascriptsource\nanoflowcommons\actions\node_modules\js-base64\base64.d.mts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\js-base64\base64.d.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\js-base64\base64.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\js-base64\base64.mjs"/>
@@ -132,6 +134,10 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\index.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\index.mjs"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\license"/>
+			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\node_modules\is-plain-obj\index.d.ts"/>
+			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\node_modules\is-plain-obj\index.js"/>
+			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\node_modules\is-plain-obj\package.json"/>
+			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\node_modules\is-plain-obj\readme.md"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\package.json"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\node_modules\merge-options\readme.md"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\package.json"/>
@@ -145,8 +151,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\src\RCTAsyncStorage.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\src\shouldFallbackToLegacyNativeModule.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-async-storage\async-storage\src\types.ts"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\.DS_Store"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\.DS_Store"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\js\implementation.native.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\js\implementation.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\js\index.ts"/>
@@ -165,7 +169,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\commonjs\NativeRNCGeolocation.js.map"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\commonjs\utils.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\commonjs\utils.js.map"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\.DS_Store"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\module\implementation.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\module\implementation.js.map"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\module\implementation.native.js"/>
@@ -178,7 +181,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\module\NativeRNCGeolocation.js.map"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\module\utils.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\module\utils.js.map"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\.DS_Store"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\js\implementation.d.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\js\implementation.d.ts.map"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\js\implementation.native.d.ts"/>
@@ -203,7 +205,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\commonjs\NativeRNCGeolocation.d.ts.map"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\commonjs\utils.d.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\commonjs\utils.d.ts.map"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\.DS_Store"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\module\implementation.d.ts"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\module\implementation.d.ts.map"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\@react-native-community\geolocation\lib\typescript\lib\module\implementation.native.d.ts"/>
@@ -225,14 +226,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geocoder\LICENSE"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geocoder\package.json"/>
 			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geocoder\README.md"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\CHANGELOG.md"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\index.d.ts"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\js\Geolocation.js"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\js\Geolocation.native.js"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\js\index.js"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\LICENSE"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\package.json"/>
-			<file path="javascriptsource\nanoflowcommons\actions\node_modules\react-native-geolocation-service\README.md"/>
 			<file path="javascriptsource\nanoflowcommons\actions\OpenMap.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\OpenURL.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\RefreshEntity.js"/>
@@ -261,7 +254,6 @@
 			<file path="javascriptsource\nanoflowcommons\actions\TimeBetween.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\ToggleSidebar.js"/>
 			<file path="javascriptsource\nanoflowcommons\actions\Wait.js"/>
-			<file path="javascriptsource\nanoflowcommons\.DS_Store"/>
 			<file path="javascriptsource\webactions\actions\FocusHelper.js"/>
 			<file path="javascriptsource\webactions\actions\FocusNext.js"/>
 			<file path="javascriptsource\webactions\actions\FocusPrevious.js"/>
@@ -586,7 +578,6 @@
 			<file path="themesource\datawidgets\web\_three-state-checkbox.scss"/>
 			<file path="themesource\datawidgets\web\_tree-node-design-properties.scss"/>
 			<file path="themesource\datawidgets\web\_tree-node.scss"/>
-			<file path="themesource\.DS_Store"/>
 			<file path="themesource\feedbackmodule\native\design-properties.json"/>
 			<file path="themesource\feedbackmodule\native\main.js"/>
 			<file path="themesource\feedbackmodule\settings.json"/>
@@ -610,7 +601,6 @@
 			<file path="themesource\fileuploader\.version"/>
 			<file path="themesource\fileuploader\web\design-properties.json"/>
 			<file path="themesource\fileuploader\web\main.scss"/>
-			<file path="themesource\nanoflowcommons\.DS_Store"/>
 			<file path="themesource\nanoflowcommons\native\design-properties.json"/>
 			<file path="themesource\nanoflowcommons\native\main.js"/>
 			<file path="themesource\nanoflowcommons\.version"/>
