@@ -1476,170 +1476,6 @@
 }
 
 @font-face {
-  font-family: "Atlas_Core$Atlas_Styling";
-  src: url("./fonts/Atlas_Core$Atlas_Styling.ttf") format("truetype");
-}
-.Atlas_Core_Controls {
-  display: inline-block;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-family: "Atlas_Core$Atlas_Styling";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-center::before {
-  content: "\e800";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-top::before {
-  content: "\e801";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-bottom::before {
-  content: "\e802";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-space-around::before {
-  content: "\e803";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-space-between::before {
-  content: "\e804";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-space-even::before {
-  content: "\e805";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-stretch::before {
-  content: "\e806";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-center::before {
-  content: "\e807";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-left::before {
-  content: "\e808";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-space-around::before {
-  content: "\e809";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-space-between::before {
-  content: "\e80a";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-space-even::before {
-  content: "\e80b";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-radius-large::before {
-  content: "\e80c";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-radius-medium::before {
-  content: "\e80d";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-radius-small::before {
-  content: "\e80e";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-style-dashed::before {
-  content: "\e80f";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-right::before {
-  content: "\e810";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-style-solid::before {
-  content: "\e811";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-width-medium::before {
-  content: "\e812";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-width-thin::before {
-  content: "\e813";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-borders-left::before {
-  content: "\e814";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-borders-bottom::before {
-  content: "\e815";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-style-dotted::before {
-  content: "\e816";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-borders-all::before {
-  content: "\e817";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-direction-vertical::before {
-  content: "\e818";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-borders-top::before {
-  content: "\e819";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-grow-shrink-auto-fit::before {
-  content: "\e81a";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-direction-horizontal::before {
-  content: "\e81b";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-border-width-thick::before {
-  content: "\e81c";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-borders-right::before {
-  content: "\e81d";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-grow-shrink-auto-fill::before {
-  content: "\e81e";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-grow-shrink-none-fixed::before {
-  content: "\e81f";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-shadows-large::before {
-  content: "\e820";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-overflow-visible::before {
-  content: "\e821";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-shadows-medium::before {
-  content: "\e822";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-overflow-hidden::before {
-  content: "\e823";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-shadows-small::before {
-  content: "\e824";
-}
-
-.Atlas_Core_Controls.Atlas_Core_Controls-none::before {
-  content: "\e825";
-}
-
-@font-face {
   font-family: "Atlas_Core$Atlas";
   src: url("./fonts/Atlas_Core$Atlas.ttf") format("truetype");
 }
@@ -3113,6 +2949,170 @@
 
 .mx-icon-lined.mx-icon-zoom-out::before {
   content: "\ea6d";
+}
+
+@font-face {
+  font-family: "Atlas_Core$Atlas_Styling";
+  src: url("./fonts/Atlas_Core$Atlas_Styling.ttf") format("truetype");
+}
+.Atlas_Core_Controls {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: "Atlas_Core$Atlas_Styling";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-center::before {
+  content: "\e800";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-top::before {
+  content: "\e801";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-bottom::before {
+  content: "\e802";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-space-around::before {
+  content: "\e803";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-space-between::before {
+  content: "\e804";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-vertical-space-even::before {
+  content: "\e805";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-stretch::before {
+  content: "\e806";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-center::before {
+  content: "\e807";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-left::before {
+  content: "\e808";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-space-around::before {
+  content: "\e809";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-space-between::before {
+  content: "\e80a";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-space-even::before {
+  content: "\e80b";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-radius-large::before {
+  content: "\e80c";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-radius-medium::before {
+  content: "\e80d";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-radius-small::before {
+  content: "\e80e";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-style-dashed::before {
+  content: "\e80f";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-aligncontent-horizontal-right::before {
+  content: "\e810";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-style-solid::before {
+  content: "\e811";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-width-medium::before {
+  content: "\e812";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-width-thin::before {
+  content: "\e813";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-borders-left::before {
+  content: "\e814";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-borders-bottom::before {
+  content: "\e815";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-style-dotted::before {
+  content: "\e816";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-borders-all::before {
+  content: "\e817";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-direction-vertical::before {
+  content: "\e818";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-borders-top::before {
+  content: "\e819";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-grow-shrink-auto-fit::before {
+  content: "\e81a";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-direction-horizontal::before {
+  content: "\e81b";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-border-width-thick::before {
+  content: "\e81c";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-borders-right::before {
+  content: "\e81d";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-grow-shrink-auto-fill::before {
+  content: "\e81e";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-grow-shrink-none-fixed::before {
+  content: "\e81f";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-shadows-large::before {
+  content: "\e820";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-overflow-visible::before {
+  content: "\e821";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-shadows-medium::before {
+  content: "\e822";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-overflow-hidden::before {
+  content: "\e823";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-shadows-small::before {
+  content: "\e824";
+}
+
+.Atlas_Core_Controls.Atlas_Core_Controls-none::before {
+  content: "\e825";
 }
 
 :root {
@@ -17974,6 +17974,10 @@ body {
 /* ==========================================================================
    focus ring for keyboard tab indicators
 ========================================================================== */
+.topbar-content, .region-bottombar {
+  --focus-outline-offset: 0;
+}
+
 .focus-ring, .widget-switch-btn-wrapper:focus-visible, .widget-rating .rating-item:focus-visible .rating-image,
 .widget-rating .rating-item:focus-visible .rating-icon, .mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus-visible, input[type=radio]:focus-visible, .mx-navigationtree:focus-visible, .mx-navigationtree li.mx-navigationtree-has-items > ul li a:focus-visible, .mx-navigationlist li.mx-navigationlist-item:focus-visible, .mx-groupbox > .mx-groupbox-header:focus-visible, input[type=checkbox]:focus-visible, .mx-link:focus-visible, .btn:focus-visible,
 .mx-button:focus-visible, .form-control:not([readonly]):focus, .form-control:not([readonly]):focus-within, a:focus-visible {
@@ -18092,6 +18096,7 @@ textarea.form-control {
   flex: 1;
   flex-wrap: wrap;
   max-width: 100%;
+  align-items: center;
 }
 .mx-compound-control .btn {
   margin-left: var(--spacing-small);
@@ -18122,6 +18127,7 @@ textarea.form-control {
 .form-group .control-label {
   overflow: hidden;
   margin-bottom: 4px;
+  text-align: left;
   text-overflow: ellipsis;
   color: var(--form-label-color);
   font-size: var(--form-label-size);
@@ -18172,6 +18178,7 @@ textarea.form-control {
     margin-bottom: 0;
     padding-top: var(--form-input-padding-y);
     padding-bottom: var(--form-input-padding-y);
+    padding-right: var(--form-label-gutter);
     line-height: var(--form-input-line-height);
   }
 }
@@ -19294,6 +19301,18 @@ input[type=checkbox]:focus-visible {
 }
 
 /* ==========================================================================
+   Checkbox Radio Button selection
+========================================================================== */
+.list-horizontal .widget-checkbox-radio-selection-list {
+  flex-direction: row;
+  gap: var(--checkboxradio-gap, var(--spacing-small));
+}
+
+.widget-checkbox-radio-selection-list {
+  gap: var(--checkboxradio-gap, var(--spacing-none));
+}
+
+/* ==========================================================================
    Grid
 
    Default Mendix grid (used for Mendix data grid)
@@ -19518,6 +19537,8 @@ input[type=checkbox]:focus-visible {
 }
 .mx-dataview > .mx-dataview-content {
   flex-grow: 1;
+}
+.mx-placeholder > .mx-dataview > .mx-dataview-content {
   overflow-y: auto;
 }
 .mx-dataview > .mx-dataview-content > .mx-container-nested > .row {
@@ -27445,8 +27466,13 @@ Do not change this file because it is core styling. Customizing core files will 
 .widget-datagrid {
   position: relative;
 }
-.widget-datagrid-grid {
+.widget-datagrid-grid.table {
   display: grid !important;
+  min-width: fit-content;
+  margin-bottom: 0;
+}
+.widget-datagrid-content {
+  overflow-x: auto;
 }
 .widget-datagrid-grid-head {
   display: contents;
@@ -28109,7 +28135,6 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
 }
 .widget-dropdown-filter-clear {
   align-items: center;
-  align-self: center;
   display: flex;
   flex-shrink: 0;
   justify-self: end;
@@ -28128,6 +28153,10 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
 }
 .widget-dropdown-filter-clear:has(+ .widget-dropdown-filter-state-icon), .widget-dropdown-filter-clear:has(+ .widget-dropdown-filter-toggle) {
   border-inline-end: 1px solid var(--gray, #787d87);
+}
+.widget-dropdown-filter-clear:focus-visible {
+  outline-offset: -2px;
+  outline: var(--brand-primary, #264ae5) solid 1px;
 }
 .widget-dropdown-filter-state-icon {
   transition: transform 0.2s;
@@ -28233,14 +28262,23 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
   justify-content: center;
   line-height: 1.334;
   padding: var(--wdf-tag-padding);
+  margin: var(--spacing-smallest, 2px);
 }
 :where(.widget-dropdown-filter.variant-tag-picker) .widget-dropdown-filter-selected-item:focus-visible {
   outline: var(--brand-primary, #264ae5) auto 1px;
+}
+:where(.widget-dropdown-filter.variant-tag-picker) .widget-dropdown-filter-selected-item:focus {
+  background-color: var(--color-primary-light, var(--brand-primary-100));
 }
 :where(.widget-dropdown-filter.variant-tag-picker) .widget-dropdown-filter-input {
   flex-basis: 0;
   min-width: 50px;
   width: initial;
+}
+:where(.widget-dropdown-filter.variant-tag-picker):not(:focus-within):not([data-empty]) .widget-dropdown-filter-input {
+  opacity: 0;
+  flex-shrink: 1;
+  min-width: 1px;
 }
 :where(.widget-dropdown-filter.variant-tag-picker) .widget-dropdown-filter-clear {
   border-color: transparent;
@@ -28658,6 +28696,11 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
 
 .widget-gallery-item-button {
   width: inherit;
+}
+
+.widget-gallery-load-more {
+  display: flex;
+  justify-content: center;
 }
 
 /* ==========================================================================
