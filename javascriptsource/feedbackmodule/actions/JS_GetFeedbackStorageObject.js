@@ -7,20 +7,17 @@
 // Other code you write will be lost the next time you deploy the project.
 import "mx-global";
 import { Big } from "big.js";
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
 
 /**
- * What does this JavaScript action do?
- * 
- * Get locally stored JSON object stored in clients internet browser. Identified by a unique key. Can be accessed by the GetStorageItemObject action. Please note that users can clear the device storage.
- * @param {string} key - This field is required.
- * @param {string} entity - This field is required.
+ * @param {string} key
+ * @param {string} entity
  * @returns {Promise.<MxObject>}
  */
-export async function GetStorageItemObject(key, entity) {
+export async function JS_GetFeedbackStorageObject(key, entity) {
 	// BEGIN USER CODE
     if (!key) {
         return Promise.reject(new Error("Input parameter 'Key' is required"));

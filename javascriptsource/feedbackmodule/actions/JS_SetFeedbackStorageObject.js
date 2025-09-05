@@ -5,19 +5,19 @@
 // - the code between BEGIN USER CODE and END USER CODE
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
+import "mx-global";
 import { Big } from "big.js";
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
 
 /**
- * Store a Mendix object in device storage, identified by a unique key. Can be accesed by the GetStargeItemObject action. Please note that users can clear the device storage.
- * @param {string} key - This field is required.
- * @param {MxObject} value - This field is required.
+ * @param {string} key
+ * @param {MxObject} value
  * @returns {Promise.<void>}
  */
-export async function SetStorageItemObject(key, value) {
+export async function JS_SetFeedbackStorageObject(key, value) {
 	// BEGIN USER CODE
     if (!key) {
         return Promise.reject(new Error("Input parameter 'Key' is required"));
